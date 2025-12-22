@@ -191,7 +191,7 @@ function initializeAddToCart() {
                 const productName = productCard.querySelector('h3').textContent;
                 const productPrice = parseFloat(productCard.querySelector('.price').textContent.replace('$', '').replace(',', ''));
                 const productDesc = productCard.querySelector('.product-desc')?.textContent || '';
-                const productImage = productCard.querySelector('.product-image').style.background || '';
+                const productImage = productCard.querySelector('.product-image img')?.src || '';
                 const productCategory = productCard.getAttribute('data-category') || '';
                 const productId = productCard.getAttribute('data-product-id') || productName.toLowerCase().replace(/\s+/g, '-');
                 
