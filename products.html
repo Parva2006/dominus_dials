@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Dominus Dials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="products.html"><img src="images/logo.png" alt="LOGO"><h1>DOMINUS DIALS</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+                <li><a href="cart.html">🛒 Cart <span class="cart-count" id="navCartCount">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-products-header">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <p>Browse our exquisite selection of premium watches</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="sport">Sport</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <div class="product-card" data-category="classic" data-product-id="classic-elegance">
+                    <div class="product-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="images/Classic Elegance.png" alt="Classic Elegance">
+                    </div>
+                    <h3>Classic Elegance</h3>
+                    <p class="product-desc">Timeless design with leather strap</p>
+                    <p class="price">$299.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="sport" data-product-id="sport-pro">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="images/Sport Pro.png" alt="Sport Pro">
+                    </div>
+                    <h3>Sport Pro</h3>
+                    <p class="product-desc">Waterproof sports watch with chronograph</p>
+                    <p class="price">$399.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="luxury" data-product-id="luxury-gold">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Luxury Gold.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Luxury Gold</h3>
+                    <p class="product-desc">Premium gold-plated timepiece</p>
+                    <p class="price">$599.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="classic" data-product-id="vintage-classic">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Vintage Classic.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Vintage Classic</h3>
+                    <p class="product-desc">Retro-inspired design with Roman numerals</p>
+                    <p class="price">$349.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="sport" data-product-id="adventure-series">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Adventure Series.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Adventure Series</h3>
+                    <p class="product-desc">Rugged design for outdoor enthusiasts</p>
+                    <p class="price">$449.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="luxury" data-product-id="platinum-elite">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Platinum Elite.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Platinum Elite</h3>
+                    <p class="product-desc">Exclusive platinum edition with diamonds</p>
+                    <p class="price">$1,299.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="classic" data-product-id="minimalist">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Minimalist.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Minimalist</h3>
+                    <p class="product-desc">Clean, simple design for everyday wear</p>
+                    <p class="price">$249.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="sport" data-product-id="fitness-tracker">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Fitness Tracker.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Fitness Tracker</h3>
+                    <p class="product-desc">Smart watch with fitness tracking features</p>
+                    <p class="price">$379.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="luxury" data-product-id="diamond-collection">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/Diamond Collection.png" alt="Luxury Gold">
+                    </div>
+                    <h3>Diamond Collection</h3>
+                    <p class="product-desc">Luxurious watch with genuine diamonds</p>
+                    <p class="price">$899.99</p>
+                    <button class="btn-primary add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dominus Dials</h3>
+                    <p>Your trusted source for premium watches</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: dominusdials@gmail.com</p>
+                    <p>Phone: +91 987654321</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dominus Dials. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
